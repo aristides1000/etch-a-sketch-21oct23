@@ -21,7 +21,7 @@ header {
   margin: 5px 0;
 }
 
-#contenedor {
+.contenedor {
   display: flex;
   justify-content: center;
   margin: 10px auto;
@@ -30,9 +30,8 @@ header {
   flex-wrap: wrap;
 }
 
-#contenedor>div {
+.contenedor>div {
   box-sizing: border-box;
-  background-color: white;
   border: 1.5px solid black;
 }
 
@@ -76,4 +75,8 @@ header {
   border: 2px solid black;
   text-align: center;
   background-color: white;
+}
+
+.color-black {
+  background-color: black;
 }

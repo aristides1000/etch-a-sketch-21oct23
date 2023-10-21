@@ -18,9 +18,16 @@ const createSquares = (sizeSquares) => {
     const divElement = document.createElement("div");
     cuadritos.appendChild(divElement);
     divElement.style.width = `${sizeSquares}px`;
+    divElement.setAttribute("id", i);
+    divElement.setAttribute("onclick", `paintSquare(${i})`);
   }
 }
 
 const resetElements = () => {
   cuadritos.innerHTML = '';
+}
+
+const paintSquare = (i) => {
+  const square = document.getElementById(i);
+  square.classList.toggle("color-black");
 }
